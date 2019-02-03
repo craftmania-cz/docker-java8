@@ -2,7 +2,7 @@ FROM openjdk:8-jdk-alpine
 
 MAINTAINER CraftMania.cz, <services@craftmania.cz>
 
-RUN apk add --no-cache --update curl ca-certificates openssl git tar bash sqlite fontconfig ipset \
+RUN apk add --no-cache --update curl ca-certificates openssl git tar bash sqlite fontconfig iptables ipset \
     && adduser -D -h /home/container container
 
 USER container
